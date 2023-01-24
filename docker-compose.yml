@@ -22,7 +22,7 @@ services:
     depends_on:
       - db-postgres
     environment:
-      - DB_POSTGRES_URI=postgres://db-postgres/sailplane
+      - POSTGRES_URI=postgres://postgres:postgres@db-postgres/sailplane
     restart: on-failure
   
   db-postgres:
@@ -30,7 +30,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - db:/var/lib/pgsql
+      - db:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
