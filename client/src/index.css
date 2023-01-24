@@ -1,0 +1,44 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/*
+=============== 
+App Styles
+===============
+*/
+
+.login-wrapper, .app-wrapper{
+    min-height: 100vh;
+}
+.login-form {
+    margin: auto;
+    padding: 24px;
+}
+.login-form .login-form__button {
+    width: 100%;
+}
+.app-header, .app-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-header .app-header__title, .app-header .app-header__avatar{
+    margin:0
+}
+.app-content {
+    margin: 16px;
+}
